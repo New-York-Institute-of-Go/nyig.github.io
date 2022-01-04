@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYIG Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css-->
+</head>
+<body>
+    <!-- Header: intro and nav bar -->
+    <section class="header">
+        <nav>
+            <div class="logo-and-text">
+                <a href="index.html">
+                    <img src="images/logo-nobg.png" alt="<NYIG Logo>">
+                    <span>NYIG</span>
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close-o" onclick="hideMenu()" id="mobilemenu"></i>
+                <ul>
+                    <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href=""><i class="fa fa-book"></i> Youth Class</a></li>
+                    <li><a href=""><i class="fa fa-handshake-o"></i> Private Lessons</a></li>
+                    <li><a href=""><i class="fa fa-video-camera"></i> Videos</a></li>
+                    <li><a href=""><i class="fa fa-user-circle"></i> Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Learn Play Teach</h1>
+            <p>
+                The New York Institute of Go's mission is to communicate the beautiful game of Go. 
+            </p>
+            <a href="" class="hero-btn">Visit us to learn more</a>
+        </div>
+
+    </section>
+
+    <!-- Courses -->
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>Group courses and private lessons.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h1>Youth Classes</h1>
+                <h3>Weekly Go class in small groups</h3>
+                <p>Smaller sized classes ensure that each student receives targeted learning and required guidance from the teacher. All classes will follow the NYIG official textbooks. Our curriculum offers a structured learning plan from beginner to high dan level.</p>
+            </div>
+            <div class="course-col">
+                <h1>Private Lessons</h1>
+                <h3>Professional 1-on-1 Coaching</h3>
+                <p>Custom study plans designed for each student. Scheduling is flexible on a weekly or biweekly frequency. A live recording of each online lesson is available upon request.</p>
+            </div>
+            <div class="course-col">
+                <h1>Adult Classes</h1>
+                <h3>Interactive Mental Training</h3>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--- Locations -->
+    <section class="locations">
+        <h1>Locations</h1>
+        
+        <div class="row">
+            <div class="locations-col">
+                <img src="images/classroom1.png" alt="Little Neck image">
+                <div class="layer">
+                    <h3>Little Neck, New York</h3>
+                </div>
+            </div>
+            <div class="locations-col">
+                <img src="images/stones.png" alt="Manhattan image">
+                <div class="layer">
+                    <h3>Manhattan, New York</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Facilities -->
+    <section class="facils">
+        <h1>Our Facilities</h1>
+    
+        <div class="row">
+            <div class="facils-col">
+                <img src="images/stones.png" alt="Equipment">
+                    <h3>Equipment</h3>
+                    <p>Our textbooks provide a systematic instruction series from beginner to 5d. Our textbooks provide a systematic instruction series from beginner to 5d.</p>
+            </div>
+            <div class="facils-col">
+                <img src="images/classroom2.png" alt="Classroom">
+                    <h3>Classroom</h3>
+                    <p>Our textbooks provide a systematic instruction series from beginner to 5d. Our textbooks provide a systematic instruction series from beginner to 5d.</p>
+            </div>
+            <div class="facils-col">
+                <img src="images/classroom1.png" alt="Textbook">
+                <h3>Curriculum</h3>
+                <p>Our textbooks provide a systematic instruction series from beginner to 5d. Our textbooks provide a systematic instruction series from beginner to 5d.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h1>Enroll in Any Online Course from<br>Anywhere in the World</h1>
+        <a href="" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <hr>
+        <p>Copyright New York Institute of Go Inc. All Rights Reserved.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>424 W49th St. New York, NY 11019, USA</p>
+    </section>
+
+    <script>
+        // Toggling menu on and off
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
