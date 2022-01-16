@@ -185,14 +185,14 @@ nav{
 }
 
 .courses h1{
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .courses p{
-    color:#777;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     line-height: 20px;
 }
 
@@ -227,6 +227,12 @@ nav{
 .course-col h1{
     font-size: 28px;
 }
+
+.course-col h1 a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
