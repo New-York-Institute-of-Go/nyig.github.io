@@ -244,6 +244,12 @@ nav{
     padding-top: 50px;
 }
 
+.locations h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
 .locations-col{
     flex-basis: 48%;
     border-radius: 10px;
@@ -294,6 +300,13 @@ nav{
     text-align: center;
     padding-top: 50px;
 }
+
+.facils h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
 .facils-col{
     flex-basis: 31%;
     border-radius: 10px;
