@@ -463,10 +463,6 @@ nav{
     font-weight: 500;
 }
 
-#contact-addresses h5 {
-    font-size: 16px;
-}
-
 .contact-col div .fa {
     color: rgba(0,0,0,0.7);
     font-size: 32px;
@@ -659,7 +655,7 @@ ul {
     }
 
     .contact-col div h5 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     }
 
@@ -669,10 +665,6 @@ ul {
 
     .contact-col div .fa {
         font-size: 20px;
-    }
-
-    #contact-addresses h5 {
-        font-size: 12px;
     }
 
     .mem-id-table {
