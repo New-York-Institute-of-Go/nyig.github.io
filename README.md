@@ -1,2 +1,2 @@
-# liryan1.github.io
+# nyig.github.io
 The official NYIG website.
