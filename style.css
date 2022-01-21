@@ -210,6 +210,12 @@ nav{
     display: block;
 }
 
+.locations-col a, .locations-col a:visited  {
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 2%;
+}
+
 .layer{
     background: transparent;
     height: 100%;
@@ -221,15 +227,15 @@ nav{
 }
 
 .layer:hover{
-    background: rgba(226,0,0,0.3);
+    background: rgba(226,0,0,0.05);
 }
 
 .layer h3{
     width: 100%;
     font-weight: 500;
     color: black;
-    font-size: 26px;
-    bottom: 55%;
+    font-size: 3rem;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -238,7 +244,7 @@ nav{
 }
 
 .layer:hover h3{
-    bottom: 10%;
+    bottom: 50%;
     opacity: 1;
 }
 
