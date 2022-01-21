@@ -74,28 +74,30 @@
     <section class="contact-us">
         <div class="row" id="row">
             <div class="contact-col">
-                <div>
+                <h2>Contact Information</h2>
+
+                <div class="contact-info">
                     <i class="fa fa-home"></i>
                     <span>
                         <p>424 W49th St, 1A, New York, NY</p>
                         <p>255-05 Northern Blvd, 2FL, Little Neck, NY</p>
                     </span>
                 </div>
-                <div>
+                <div class="contact-info">
                     <i class="fa fa-phone"></i>
                     <span>
                         <h5>+1 (646) 287-9536</h5>
                         <p>Tuesday - Sunday, 9:00 am - 5:00 pm</p>
                     </span>
                 </div>
-                <div>
+                <div class="contact-info">
                     <i class="fa fa-envelope"></i>
                     <span>
                         <h5>info@ny-go.org</h5>
                         <p>Email us your query</p>
                     </span>
                 </div>
-                <div>
+                <div class="contact-info">
                     <i class="fa fa-wechat"></i>
                     <span>
                         <h5>NewYorkInstituteofGo</h5>
@@ -104,12 +106,40 @@
                 </div>
             </div>
             <div class="contact-col">
-                <form target="_blank" method="post" autocomplete="on" name="google-sheet">
-                    <input type="text" name="Name" placeholder="Enter your name" required>
-                    <input type="email" name="Email" placeholder="Enter your email" required>
-                    <input type="text" name="Rank" placeholder="Enter your rank">
+                <h2>Contact Form</h2>
+                <form method="post" autocomplete="on" name="contact-form" id="contact-form">
+
+                    <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
+
+                    <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+
+                    <input type="text" name="Rank" id="Rank" placeholder="Enter your rank">
+                    <!-- drop downs -->
+                    <div class="select">
+                    <label for="Interest">What are you interested in?&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <select name="Interest" id="Interest" required>
+                        <option value="Youth class">Youth classes</option>
+                        <option value="Adult class">Adult classes</option>
+                        <option value="Private lesson">Private lessons</option>
+                        <option value="Tournaments">Tournaments</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    </div>
+
+                    <div class="select">
+                    <label for="Hear">How did you hear about us?&nbsp;&nbsp;&nbsp;</label>
+                    <select name="Hear-about-us" id="Hear" required>
+                        <option value="Search Engine">Search engine</option>
+                        <option value="Friends">Friends or colleagues</option>
+                        <option value="Social media">Social media</option>
+                        <option value="Tournaments">Tournaments</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    </div>
+
                     <textarea rows="6" name="Message" placeholder="Enter your message" required></textarea>
-                    <button onclick="contact-us.html" type="submit" name="Submit" class="hero-btn" id="submit-btn">Send Message</button>
+
+                    <button onclick="" type="submit" name="Submit" class="hero-btn submit" id="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
@@ -118,16 +148,16 @@
     <!-- Footer -->
     <section class="footer" id="footer">
         <hr>
-        <p>Ⓒ New York Institute of Go Inc. All Rights Reserved.</p>
+        <p>Copyright Ⓒ New York Institute of Go Inc. 2022. All Rights Reserved.</p>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-youtube"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
+            <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook"></i></a>
+            <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter"></i></a>
+            <a href="http://instagram.com/stephanie.go"><i class="fa fa-instagram"></i></a>
         </div>
     </section>
 
-    <script src="nav_toggle.js"></script>
-    <script src="google_sheet.js"></script>
+    <script src="js/nav_toggle.js"></script>
+    <script src="js/google_sheets.js"></script>
 </body>
 </html>
