@@ -71,6 +71,10 @@ nav{
     width: 100%
 }
 
+#mobilemenu {
+    display: none;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
