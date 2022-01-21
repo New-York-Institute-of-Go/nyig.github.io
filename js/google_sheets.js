@@ -9,14 +9,3 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
     form.reset()
 })
-
-const subscribeURL = "https://script.google.com/macros/s/AKfycbz3VAGBDh9xiZ0ScPEcMW5xZx3VLghr0tnjfpn7VbQI8W0-HS5j/exec"
-const form2 = document.forms['subscribe']
-
-form2.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(subscribeURL, { method: 'POST', body: new FormData(form2) })
-        .then(response => alert("Thank you for subscribing!"))
-        .catch(error => console.error('Error!', error.message))
-    form2.reset()
-})

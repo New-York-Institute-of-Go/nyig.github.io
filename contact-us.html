@@ -38,7 +38,7 @@
         </nav>
         <div class="text-box" id="title-text">
             <h1>Contact Us</h1>
-            <div class="row btn" id="row">
+            <div class="row btn">
                 <div class="contact-button">
                     <a href="mailto: info@ny-go.org" class="hero-btn"><i class="fa fa-envelope"></i> info@ny-go.org</a>
                 </div>
@@ -107,7 +107,7 @@
             </div>
             <div class="contact-col">
                 <h2>Contact Form</h2>
-                <form method="post" autocomplete="on" name="contact-form" id="contact-form">
+                <form method="post" autocomplete="on" name="contact-form" class="contact-form">
 
                     <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
 
@@ -150,14 +150,24 @@
         <hr>
         <p>Copyright Ⓒ New York Institute of Go Inc. 2022. All Rights Reserved.</p>
         <div class="icons">
-            <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook"></i></a>
-            <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube"></i></a>
-            <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook-square"></i></a>
+            <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter-square"></i></a>
             <a href="http://instagram.com/stephanie.go"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"><i
+                    class="fa fa-paypal"></i></a>
         </div>
+        <hr>
+        <form method="post" autocomplete="on" name="subscribe" id="subscribe">
+            <h4>Subscribe to Go news & events</h4>
+            <input type="text" class="name" name="Name" placeholder="Enter your name" required>
+            <input type="email" class="email" name="Email" placeholder="Enter your email" required>
+            <button onclick="" type="submit" name="Submit" class="hero-btn submit">Subscribe</button>
+        </form>
     </section>
-
+    
+    <script src="js/sub.js"></script>
     <script src="js/nav_toggle.js"></script>
-    <script src="js/google_sheets.js"></script>
+
 </body>
 </html>

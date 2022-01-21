@@ -101,6 +101,7 @@ nav{
 
 .hero-btn{
     margin-top: 30px;
+    min-width: 30%;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -117,62 +118,6 @@ nav{
     border: 2px solid #f44336;
     background: #f44336;
     transition: 0.8s
-}
-
-#mobilemenu{
-    display: none;
-}
-
-@media only screen and (max-width: 700px){
-    .hero-btn {
-        font-size: 12px;
-    }
-    /* Resize the logo and text */
-    .logo-and-text{
-        z-index: 99;
-        margin-left: 3%;
-        margin-top: 3%;
-    }
-    .logo-and-text span {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .logo-and-text a img {
-        height: 25px;
-    }
-
-    /* Sets navigation bar style */
-    .nav-links ul li{
-        display: block;
-        font-size: 12px;
-    }
-    .nav-links{
-        background-image: linear-gradient(rgba(4,9,30,0.9), rgba(4,9,30,0.9)), url(images/classroom1.png);
-        background-position: center;
-        background-size: cover;
-        display: none;
-        position: fixed;
-        height: auto;
-        width: 100vw;
-        top: 0;
-        text-align: center;
-        z-index: 2;
-        transition: 0.6s;
-    }
-    #mobilemenu{
-        text-align: right;
-        position: relative;
-        display: block;
-        color: #fff;
-        margin: 2%;
-        font-size: 20px;
-        cursor: pointer;
-        padding-right: 2%;
-    }
-    .nav-links ul li{
-        padding: 2%;
-    }
 }
 
 /* ----- courses ----- */
@@ -273,7 +218,7 @@ nav{
 }
 
 .layer:hover{
-    background: rgba(226,0,0,0.1);
+    background: rgba(226,0,0,0.3);
 }
 
 .layer h3{
@@ -352,8 +297,12 @@ nav{
     padding: 30px 0;
 }
 
+.icons {
+    margin-bottom: 30px;
+}
+
 .icons .fa{
-    color: black;
+    color: rgba(226,0,0,0.7);
     cursor: pointer;
     padding: 2px;
     font-size: 30px;
@@ -471,7 +420,7 @@ nav{
     margin-right: 20px;
 }
 
-#contact-form input, #contact-form textarea {
+.contact-form input, .contact-form textarea {
     width: 100%;
     font-size: 14px;
     padding: 10px;
@@ -482,17 +431,42 @@ nav{
     box-sizing: border-box;
 }
 
-#contact-form input:focus, #contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
     border: 3px solid #555;
+}
+
+#subscribe input {
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px 5px;
+    outline: none;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+}
+
+#subscribe input:focus {
+    border: 3px solid #555;
+}
+
+#subscribe .name {
+    width: 10%;
+}
+
+#subscribe .email{
+    width: 20%;
 }
 
 .hero-btn.submit {
     padding: 6px 10px;
     margin-top: 10px;
+    color: black;
+    border: 3px solid black;
+    font-weight: 400;
+    margin-top: 0px;
 }
 
 .hero-btn.submit:hover {
-    background: rgba(226,0,0,0.1) !important;
+    background: rgba(226,0,0,0.3) !important;
 }
 
 .tuitions, .tuitions th, .tuitions td {
@@ -515,17 +489,6 @@ nav{
 
 ul {
    list-style-position: inside;
-}
-
-#submit-btn {
-    color: black;
-    border: 3px solid black;
-    font-weight: 400;
-    margin-top: 0px;
-}
-
-#submit-btn:hover {
-    background: #f44336;
 }
 
 #title-text {
@@ -575,6 +538,57 @@ ul {
 }
 
 @media only screen and (max-width: 700px) {
+    .hero-btn {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    /* Resize the logo and text */
+    .logo-and-text{
+        z-index: 99;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    .logo-and-text span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .logo-and-text a img {
+        height: 25px;
+    }
+
+    /* Sets navigation bar style */
+    .nav-links ul li{
+        display: block;
+        font-size: 12px;
+    }
+    .nav-links{
+        background-image: linear-gradient(rgba(4,9,30,0.9), rgba(4,9,30,0.9)), url(images/classroom1.png);
+        background-position: center;
+        background-size: cover;
+        display: none;
+        position: fixed;
+        height: auto;
+        width: 100vw;
+        top: 0;
+        text-align: center;
+        z-index: 2;
+        transition: 0.6s;
+    }
+    #mobilemenu{
+        text-align: right;
+        position: relative;
+        display: block;
+        color: #fff;
+        margin: 2%;
+        font-size: 20px;
+        cursor: pointer;
+        padding-right: 2%;
+    }
+    .nav-links ul li{
+        padding: 2%;
+    }
+
     /* Enable scrolling for long tables */
     .table-wrapper {
         overflow-x: scroll;
@@ -584,9 +598,8 @@ ul {
         flex-direction: column;
     }
 
-    /* Change buton rows back */
-    .row.btn {
-        flex-direction: row;
+    .contact-button {
+        margin: 5px 0px;
     }
 
     /* Reduce font size of texts */
@@ -639,11 +652,17 @@ ul {
     }
 
     #footer p{
-        font-size: smaller;
+        font-size: 12px;
     }
 
      #footer .fa {
-         font-size: large;
+         font-size: 28px;
+        margin: 10px 2px;
+     }
+
+     #footer form input {
+         width: 75% !important;
+         font-size: 11px;
      }
 
     .main-content p{
@@ -671,12 +690,12 @@ ul {
     }
 
     .contact-info span h5 {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 500;
     }
 
     .contact-col div {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .contact-col div .fa {
@@ -690,13 +709,18 @@ ul {
         font-size: 10px;
     }
 
+    .hero-btn.submit {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
     /* Makes padding smaller for buttons */
     .contact-button .hero-btn {
         padding: 6px 10px;
         margin-top: 0px;
     }
 
-    #contact-form input, #contact-form textarea {
+    .contact-form input, .contact-form textarea, .subscribe {
 
     font-size: 10px !important;
     }
@@ -708,6 +732,10 @@ ul {
     .membership-intro iframe {
         width: 100%;
         height: 30vh;
+    }
+
+    .contact-col h2 {
+        font-size: 16px;
     }
 
 }
