@@ -99,8 +99,12 @@ nav{
     font-size: 60px;
 }
 
-.text-box p{
-    font-size: 16px;
+.text-box .med-text{
+    font-size: 18px;
+}
+
+.text-box .large-text{
+    font-size: 24px;
 }
 
 .hero-btn{
@@ -393,6 +397,10 @@ nav{
     flex-basis: 31%;
 }
 
+.contact-button.front .hero-btn {
+    min-width: 5vw !important;
+}
+
 .contact-button div {
     display: flex;
     align-items: center;
@@ -458,7 +466,7 @@ nav{
 }
 
 #subscribe .name {
-    width: 10%;
+    width: 15%;
 }
 
 #subscribe .email{
@@ -489,11 +497,31 @@ nav{
 }
 
 .table-wrapper {
-    width: 100%;
+    font-size: 16px;
 }
 
 .table-wrapper .tuitions {
     text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-wrapper .tuitions td, .table-wrapper .tuitions th {
+    border: 1px solid #ddd;
+    padding: 0.5vh;
+}
+
+.table-wrapper .tuitions tr:hover {
+    background-color: #ddd;
+}
+
+.table-wrapper .tuitions th{
+    padding: 1vh 0vh;
+    background-color: rgba(75, 119, 190, 0.1);
+}
+
+.table-wrapper #camp {
+    width: 50%;
 }
 
 ul {
@@ -603,12 +631,33 @@ ul {
     margin-top: -2vh;
 }
 
+.class-times p {
+    margin: 0px 0px;
+}
+
+.camp-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.camp-header img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 #prev-tourn {
     border-color: #555;
     margin: 0px 0px;
 }
 
 @media only screen and (max-width: 700px) {
+    .header-more-space{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     .hero-btn {
         font-size: 16px;
         font-weight: 500;
