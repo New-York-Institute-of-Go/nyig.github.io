@@ -127,6 +127,12 @@ nav{
     transition: 0.8s
 }
 
+.tournament .text .hero-btn {
+    margin-top: -2vw;
+    border-color: #555;
+    margin-left: 2vw;
+}
+
 /* ----- courses ----- */
 
 .courses{
