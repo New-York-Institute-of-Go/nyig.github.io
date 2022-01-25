@@ -160,6 +160,22 @@ nav{
     justify-content: space-between;
 }
 
+.row.btn {
+    display: flex;
+    justify-content: left
+}
+
+.row.btn .content {
+    margin-right: 1vw;
+    margin-top: -2vw;
+}
+
+.row.btn .content .hero-btn {
+    color: black;
+    border-color: #555;
+    flex-basis: 10%;
+}
+
 .course-col{
     flex-basis: 31%;
     background: #fff3f3;
@@ -535,7 +551,7 @@ ul {
 }
 
 #title-text {
-    width: 60%;
+    width: 80%;
 }
 #title-text h1 a {
     color: inherit;
