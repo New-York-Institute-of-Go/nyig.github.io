@@ -1,5 +1,5 @@
 // Automatically add form submission to Google Sheets
-const subscribeURL = "https://script.google.com/macros/s/AKfycbz3VAGBDh9xiZ0ScPEcMW5xZx3VLghr0tnjfpn7VbQI8W0-HS5j/exec"
+const subscribeURL = "https://script.google.com/macros/s/AKfycbxLNEpnRmDpJpjEVs392-yHN9uyCZTNUfn2k7vB3Ps1ochu_DEArwNLlG5MUk4wgrBL/exec"
 const subForm = document.forms['subscribe']
 
 subForm.addEventListener('submit', e => {
