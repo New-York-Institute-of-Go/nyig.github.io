@@ -156,7 +156,7 @@ nav{
 
 .row.btn {
     display: flex;
-    justify-content: left
+    justify-content: center;
 }
 
 .row.btn .content {
@@ -172,7 +172,7 @@ nav{
 
 .course-col{
     flex-basis: 31%;
-    background: #eef1fc;
+    background: #eeeffc;
     border-radius: 10px;
     margin-bottom: 0%;
     padding: 20px 12px;
@@ -225,6 +225,7 @@ nav{
 .text-left-img-right img {
     max-height: 20rem;
     min-height: 20rem;
+    max-width: 20rem;
 }
 
 .text-left-img-right .paragraph {
@@ -244,6 +245,11 @@ nav{
 
 .text-left-img-right .row.btn a {
     margin-left: -2rem;
+}
+
+.text-left-img-right .row.btn {
+    display: left !important;
+    justify-content: left !important;
 }
 
 .locations{
@@ -788,6 +794,16 @@ ul {
         flex-direction: column;
     }
 
+    .row.btn {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .row.btn .hero-btn {
+        margin-top: 1rem;
+        font-size: 13px;
+    }
+
     .contact-button {
         margin: 5px 0px;
     }
@@ -845,12 +861,12 @@ ul {
         font-size: 12px;
     }
 
-     #footer .fa {
+    #footer .fa {
          font-size: 28px;
         margin: 10px 2px;
      }
 
-     #footer form input {
+    #footer form input {
          width: 75% !important;
          font-size: 11px;
      }
@@ -933,4 +949,23 @@ ul {
         font-weight: 400;
     }
 
+    .facils img {
+        display: none;
+    }
+
+    .text-left-img-right {
+        flex-direction: column;
+    }
+    .text-left-img-right img {
+        max-height: 10rem;
+        min-height: 10rem;
+    }
+
+    .text-left-img-right .paragraph {
+        font-size: 12px;
+    }
+
+    .text-left-img-right .title {
+        font-size: 20px;
+    }
 }
