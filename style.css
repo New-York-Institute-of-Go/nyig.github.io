@@ -266,7 +266,7 @@ nav{
 }
 
 .locations-col{
-    flex-basis: 48%;
+    flex-basis: 45%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -275,6 +275,7 @@ nav{
 .locations-col img{
     width: 100%;
     display: block;
+    max-height: 50vh;
 }
 
 .locations-col a, .locations-col a:visited  {
@@ -301,7 +302,7 @@ nav{
     width: 100%;
     font-weight: 500;
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
@@ -733,6 +734,21 @@ ul {
     margin: 0px 0px;
 }
 
+.instructions img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    max-height: 30vh;
+    max-width: 80vw;
+}
+.instructions#setup img {
+    max-height: 50vh;
+}
+
+.instructions .img-flex {
+    display: flex;
+}
 
 /* Footer */
 /* Begin */
