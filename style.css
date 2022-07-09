@@ -685,11 +685,32 @@ ul {
     text-decoration: none;
 }
 
-#youtube-team #row div{
+.facils#youtube-team img {
+    border-radius: 50%;
+    margin: 5vh;
+    max-height: 30vh;
+    max-width: 30vh;
+    width: auto;
+    height: auto;
+}
+
+.facils#youtube-team h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 150%;
+}
+
+.facils#youtube-team .info {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.facils#youtube-team #row div{
     margin-top: 30px;
 }
 
-#youtube-team h2{
+.facils#youtube-team h2{
     margin-bottom: 20px;
 }
 
@@ -713,16 +734,6 @@ ul {
 .mem-col2 {
     text-align: left;
 }
-
-#lecture-schedule h1 {
-    margin-top: 0px;
-}
-
-.membership-intro {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 
 .tournament-list {
     width: 100%;
@@ -1192,10 +1203,6 @@ ul {
     .contact-form input, .contact-form textarea, .subscribe {
 
     font-size: 10px !important;
-    }
-
-    .membership-intro {
-        width: 100%;
     }
 
     iframe {
