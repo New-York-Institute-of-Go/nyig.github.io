@@ -105,6 +105,8 @@ nav{
 
 .text-box .large-text{
     font-size: 1.25rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .hero-btn{
@@ -208,24 +210,35 @@ nav{
 .what-is-go {
     width: 80%;
     margin: auto;
-    padding-top: 4rem;
+    padding-top: 2rem;
+    text-align: justify;
 }
 
 .why-learn-go {
     width: 80%;
     margin: auto;
-    padding-top: 4rem;
+    padding-top: 2rem;
+    text-align: justify;
 }
 
 .text-left-img-right {
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
+    height: 23rem;
+    align-items: center;
+}
+
+#email-link {
+    color: black;
 }
 
 .text-left-img-right img {
-    max-height: 20rem;
-    min-height: 20rem;
-    max-width: 20rem;
+    margin: 4rem 2rem;
+    height: auto;
+    width: auto;
+    max-height: 15rem;
+    max-width: 15rem;
 }
 
 .text-left-img-right .paragraph {
@@ -236,6 +249,9 @@ nav{
     padding: 0vh 1vh 1vh 4vh;
     display: flex;
     flex-direction: column;
+    overflow: auto;
+    margin: 2rem 2rem 0rem -2rem;
+    max-height: 100%;
 }
 
 .text-left-img-right .title {
@@ -250,6 +266,56 @@ nav{
 .text-left-img-right .row.btn {
     display: left !important;
     justify-content: left !important;
+    margin-left: 2rem;
+}
+
+.text-left-img-right#team-info {
+    background: linear-gradient(-45deg, #c6ffdd, #fbd786, #f7797d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin-top: 2rem;
+    height: 20rem;
+}
+
+.text-left-img-right#team-info-president {
+    background: linear-gradient(-45deg, #f7797d, #c6ffdd, #fbd786);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin-top: 2rem;
+    height: 20rem;
+}
+
+.text-left-img-right#team-info .title {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.text-left-img-right#team-info img {
+    border-radius: 50%;
+}
+
+.text-left-img-right#team-info .team-position {
+    font-style: italic;
+    font-size:large;
+}
+
+.text-left-img-right#team-info .paragraph {
+    padding-top: 0rem;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .locations{
@@ -437,6 +503,12 @@ nav{
     font-size: 16px;
     margin-bottom: 20px;
     text-align: justify;
+}
+
+.main-content .hero-btn {
+    margin-top: 1vh;
+    border-color: #555;
+    color: #222;
 }
 
 .header-more-space{
@@ -750,6 +822,13 @@ ul {
     display: flex;
 }
 
+.staff-info {
+    width: 80%;
+    margin-top: 4rem;
+    margin: auto;
+    text-align: justify;
+}
+
 /* Footer */
 /* Begin */
 .footer-distributed {
@@ -775,6 +854,11 @@ ul {
     width: 40%;
 }
 
+.footer-distributed .footer-center {
+    margin-left: 2%;
+    margin-right: -2%;
+}
+
 /* The company logo */
 
 .footer-distributed h3 {
@@ -784,7 +868,6 @@ ul {
 }
 
 /* Footer links */
-
 .footer-distributed .footer-links {
     color: #ffffff;
     margin: 20px 0 12px;
@@ -1135,18 +1218,40 @@ ul {
 
     .text-left-img-right {
         flex-direction: column;
+        height: 25rem;
     }
     .text-left-img-right img {
         max-height: 10rem;
         min-height: 10rem;
+        margin-top: 3vh;
+        margin-bottom: -3vh;
+    }
+
+    .text-left-img-right .row.btn a {
+        margin-left: 0rem;
+        overflow: hidden;
+        padding-bottom: 1rem;
     }
 
     .text-left-img-right .paragraph {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .text-left-img-right .title {
-        font-size: 20px;
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    .text-left-img-right .content {
+        margin: 2rem 0.2rem 0rem 0rem;
+        padding: 0vh 1vh 1vh 2vh;
+    }
+
+    .text-left-img-right#team-info .team-position {
+        font-size: 14px !important;
+        text-align: center;
+        margin-top: -1vh;
+        margin-bottom: 2vh;
     }
 
     .instructions .img-flex {
