@@ -1070,6 +1070,10 @@ ul {
     .table-wrapper {
         overflow-x: scroll;
     }
+    .table-wrapper {
+        padding: 0pt 0pt !important;
+    }
+
     /* Prevents overflow of columns */
     .row{
         flex-direction: column;
