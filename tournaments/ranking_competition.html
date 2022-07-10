@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Go Ranking Competition</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo-nobg.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- Header: intro and nav bar -->
+  <section class="sub-header">
+    <nav>
+      <div class="logo-and-text">
+        <a href="../index.html">
+          <img src="../images/logo-nobg.png" alt="<NYIG Logo>">
+          <span>NYIG</span>
+        </a>
+      </div>
+      <div class="nav-links clearfix" id="navLinks">
+        <i class="fa fa-window-close-o" onclick="hideMenu()" id="mobilemenu"></i>
+        <ul>
+          <li><a href="../about.html"><i class="fa fa-info-circle"></i> About</a></li>
+          <li><a href="../youth-class.html"><i class="fa fa-graduation-cap"></i> Youth Class</a></li>
+          <li><a href="../private-lesson.html"><i class="fa fa-book"></i> Private Lesson</a></li>
+          <li><a href="../tournaments.html"><i class="fa fa-trophy"></i> Events</a></li>
+          <li><a href="nyig_go.html"><i class="fa fa-video-camera"></i> Channel</a></li>
+          <li><a href="../contact-us.html"><i class="fa fa-user-circle"></i> Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
+    </nav>
+    <div class="text-box" id="title-text">
+      <h1>US Go Ranking Competition</h1>
+      <p>Win games and promote to a higher rank</p>
+
+      <div class="row btn" id="row">
+        <div class="contact-button">
+          <a href="https://www.services.ny-go.org/events" target="_blank" class="hero-btn"><i class="fa fa-pencil-square-o"></i>&nbsp;Register Here</a>
+        </div>
+        <div class="contact-button">
+          <a href="" class="hero-btn"><i class="fa fa-user-circle"></i>&nbsp;Ranking Certificate</a>
+        </div>
+        <div class="contact-button">
+          <a href="../youth-class.html" class="hero-btn"><i class="fa fa-graduation-cap"></i>&nbsp;Classes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start content section -->
+  <section class="main-content">
+    <h3>Tournament Overview</h3>
+    <p>
+      The US Go Ranking Competition is a 5-round tournament for players to promote to a higher rank. This tournament supports promotion from 24k to 1d. Players that promote above 10k must participate in an AGA-rated tournament for the rank to become official. Contestants are separated into divisions and play against players of similar rank. <a href="">Ranking certificates</a> can be purchased (one-time only). See <a href="https://en.wikipedia.org/wiki/Go_ranks_and_ratings" target="_blank">this page</a> for a brief introduction to Go ranks.
+    </p>
+
+    <!-- Schedule -->
+    <div class="schedule">
+      <div class="table-wrapper" id="tournament-info">
+        <table class="tuitions" id="schedule">
+          <tr>
+            <th><i class="fa fa-user-circle-o"></i>&nbsp;Eligibility</th>
+            <td>Participants must have a valid AGA rating, previous ranking certificate, or register as 24 kyu upon completion of the NYIG beginner course. Players must be 1k or under.</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-calendar-check-o"></i>&nbsp;Time</th>
+            <td><strong>Monday, September 5, 2022 @ 11:30-5:00pm</strong></td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-sign-in"></i>&nbsp;Place</th>
+            <td>424 W 49th St. 1A, New York, NY 10019</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-trophy"></i>&nbsp;Awards</th>
+            <td>Rank promotion depends on the group. See below.</td>
+          </tr>
+          <tr>
+            <th>Registration</th>
+            <td>Start: 11:30 AM ET. </td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-calendar"></i>&nbsp;Schedule</th>
+            <td>
+              <ul>
+                <li>Round 1: 12:00 PM</li>
+                <li>Round 2: 1:00 PM</li>
+                <li>Round 3: 2:00 PM</li>
+                <li>Round 4: 3:00 PM</li>
+                <li>Round 5: 4:00 PM</li>
+              </ul>
+              Note: No award ceremony is held for ranking competitions.
+            </td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-edit"></i>&nbsp;Registration</th>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-hourglass-end"></i>&nbsp;Deadline</th>
+            <td>August 31, 2022 @ 11:59pm ET</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Important paragraphs -->
+    <h3>Divisions</h3>
+    <p>
+      The table below shows each <strong>division</strong>, <i>group</i>, and range of ranks. Participants are guaranteed to be paired within the same <strong>division</strong>, but may be paired with a player from a different <i>group</i>.
+    </p>
+    <div class="schedule">
+      <div class="table-wrapper" id="ranking-divisions">
+        <table class="tuitions" id="schedule">
+          <tr>
+            <th>Division</th>
+            <th>Group</th>
+            <th>Range</th>
+          </tr>
+          <tr>
+            <td rowspan="2">Division <strong>A</strong>: Single-digit kyu</td>
+            <td>A1</td>
+            <td>4k &mdash; 1k</td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>9k &mdash; 5k</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Division <strong>B</strong>: Double-digit kyu</td>
+            <td>B1</td>
+            <td>10k &mdash; 14k</td>
+          </tr>
+          <tr>
+            <td>B2</td>
+            <td>19k &mdash; 15k</td>
+          </tr>
+          <tr>
+            <td>B3</td>
+            <td>24k &mdash; 20k</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <h3>Promotion Requirements</h3>
+    <p>
+      The table below shows promotion requirements in each division. The player's rank change as soon as enough games are accumulated for promotion. Further wins are carried into the following tournament.
+    </p>
+    <p>
+      Example: if a player wins 4 games in A2 Group, the 4th win will be added as a first win in the next tournament.
+    </p>
+    <p>
+      Example: A 20 kyu player enters the B3 Group and wins 1 game. The player is immediately promoted to 19 kyu and plays
+      the remaining rounds in the B2 Group.
+    </p>
+    <div class="schedule">
+      <div class="table-wrapper" id="ranking-divisions">
+        <table class="tuitions" id="schedule">
+          <tr>
+            <th>Division</th>
+            <th>Promotion</th>
+          </tr>
+          <tr>
+            <th>1k to 1d</th>
+            <td>3 consecutive wins or 5 accumulated wins</td>
+          </tr>
+          <tr>
+            <th rowspan="3">Division <strong>A</strong>: Single-digit kyu</th>
+            <td>1 win promotes up 1 level</td>
+          </tr>
+          <tr>
+            <td>3 wins promotes up 2 levels</td>
+          </tr>
+          <tr>
+            <td>5 wins promotes up 3 levels</td>
+          </tr>
+          <tr>
+            <th rowspan="3">Division <strong>B</strong>: Double-digit kyu</th>
+            <td>Each win promotes up 1 level to a maximum of 4 levels</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+    <!-- Rules -->
+    <h3><i class="fa fa-info-circle"></i>&nbsp;Rules and Regulations</h3>
+    <div class="schedule">
+      <div class="table-wrapper">
+        <table class="tuitions" id="schedule">
+          <tr>
+            <th><i class="fa fa-thumb-tack"></i>&nbsp;Rules</th>
+            <td> <a href="https://www.usgo.org/rules-of-go">AGA rules</a>.</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-globe"></i>&nbsp;Location</th>
+            <td>424 W 49th St. 1A, New York, NY 10019</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-clock-o"></i>&nbsp;Time</th>
+            <td><strong>25 minutes</strong> absolute time.</td>
+          </tr>
+          <tr>
+            <th>Check in</th>
+            <td>On tournament day, each player must check in before the tournament begins in order to be paired.</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-times"></i>&nbsp;No Undos</th>
+            <td>Every move is final. Taking a move back is not allowed.</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-times"></i>&nbsp;No Chatting</th>
+            <td>No talking. Each player will receive one warning before being disqualified.</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-bars"></i>&nbsp;Divisions</th>
+            <td>All brackets are based on current player ranks.</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-flag"></i>&nbsp;Punctuality</th>
+            <td>All players are expected to be on time. If a player does not arrive <strong>15 minutes after the round
+                starts</strong>, the player automatically forfeits the round. Wait for the TD to confirm your win before leaving.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer BEGIN -->
+  <section class="footer" id="footer">
+    <hr>
+    <form method="post" autocomplete="on" name="subscribe" id="subscribe">
+      <h4>Subscribe to Go news & events</h4>
+      <input type="text" class="name" name="Name" placeholder="Enter your name" required>
+      <input type="email" class="email" name="Email" placeholder="Enter your email" required>
+      <button onclick="" type="submit" name="Submit" class="hero-btn submit">Subscribe</button>
+    </form>
+  </section>
+  
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <div class="logo-and-text">
+        <a href="index.html">
+          <img src="../images/logo-nobg.png" alt="<NYIG Logo>">
+          <span>NYIG</span>
+        </a>
+      </div>
+      <p class="footer-links">
+        <a href="about.html">About</a>
+        <a href="youth-class.html">Youth Class</a>
+        <a href="private-lesson.html">Private Lesson</a>
+        <a href="tournaments.html">Events</a>
+        <a href="nyig_go.html">Channel</a>
+        <a href="contact-us.html">Contact</a>
+      </p>
+      <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
+    </div>
+  
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>424 W 49th St, 1A</span> New York, NY</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+1.646.287.9536</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Our mission promote and prolong the game of Go, the oldest board game still played in its original form, in North
+        America.
+      </p>
+  
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook"></i></a>
+        <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"><i
+            class="fa fa-paypal"></i></a>
+        <a href="https://www.linkedin.com/company/nyig"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  
+  </footer>
+  <!-- Footer END -->
+
+  <script src="../js/sub.js"></script>
+  <script src="../js/nav_toggle.js"></script>
+
+</body>
+
+</html>

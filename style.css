@@ -646,9 +646,11 @@ nav{
 .table-wrapper .tuitions td, .table-wrapper .tuitions th {
     border: 1px solid #ddd;
     padding: 0.5vh;
+    max-width: 60vw;
+    min-width: 10vw;
 }
 
-.table-wrapper .tuitions tr:hover {
+.table-wrapper .tuitions td:hover {
     background-color: #ddd;
 }
 
@@ -671,6 +673,11 @@ nav{
 .table-wrapper#tournament-info {
     padding-left: min(10rem, 10%);
     padding-right: min(10rem, 10%);
+}
+
+.table-wrapper#ranking-divisions {
+    padding-left: min(20vw, 17%);
+    padding-right: min(20vw, 17%);
 }
 
 ul {
