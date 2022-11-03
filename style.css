@@ -1113,7 +1113,12 @@ ul {
     }
 
     #title-text {
-         width: 90%;
+        width: 90%;
+    }
+
+    
+    #title-text h2 {
+        font-size: 3vh;
     }
 
     #title-text p{
