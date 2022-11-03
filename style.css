@@ -692,6 +692,12 @@ ul {
     text-decoration: none;
 }
 
+#title-text h2 {
+    font-size: 5vh;
+    font-weight: 500;
+    color: inherit;
+}
+
 .facils#youtube-team img {
     border-radius: 50%;
     margin: 5vh;
@@ -753,7 +759,7 @@ ul {
 }
 
 .tournament-list#past-tournaments {
-    max-height: 25rem;
+    max-height: 90vh;
     overflow: scroll;
 }
 
