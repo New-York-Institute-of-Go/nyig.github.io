@@ -684,6 +684,23 @@ ul {
    list-style-position: inside;
 }
 
+.center-around-colon div {
+    display: flex;
+}
+
+.center-around-colon div span {
+    flex: 1
+}
+
+.center-around-colon span:first-of-type {
+    text-align: right;
+}
+
+.center-around-colon span:last-of-type {
+    padding-left: 5px;
+    text-align: left;
+}
+
 #title-text {
     width: 80%;
 }
