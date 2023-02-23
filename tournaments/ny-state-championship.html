@@ -1,219 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NY State Championship</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-nobg.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NY State Championship</title>
-  <link rel="icon" type="image/x-icon" href="../images/logo-nobg.png">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
-  <!-- Header: intro and nav bar -->
-  <section class="sub-header">
-    <nav>
-      <div class="logo-and-text">
-        <a href="../index.html">
-          <img src="../images/logo-nobg.png" alt="<NYIG Logo>">
-          <span>NYIG</span>
-        </a>
-      </div>
-      <div class="nav-links clearfix" id="navLinks">
-        <i class="fa fa-window-close-o" onclick="hideMenu()" id="mobilemenu"></i>
-        <ul>
-          <li><a href="../about.html"><i class="fa fa-info-circle"></i> About</a></li>
-          <li><a href="../group-class.html"><i class="fa fa-graduation-cap"></i> Group Class</a></li>
-          <li><a href="../private-lesson.html"><i class="fa fa-book"></i> Private Lesson</a></li>
-          <li><a href="../tournaments.html"><i class="fa fa-trophy"></i> Events</a></li>
-          <li><a href="../nyig_go.html"><i class="fa fa-video-camera"></i> Channel</a></li>
-          <li><a href="../contact-us.html"><i class="fa fa-user-circle"></i> Contact</a></li>
-        </ul>
-      </div>
-      <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
-    </nav>
-    <div class="text-box" id="title-text">
-      <h2>The 1<sup>st</sup> New York State Championships</h2>
-      <div class="row btn" id="row">
-        <div class="contact-button">
-          <a href="../tournaments.html" class="hero-btn"><i class="fa fa-arrow-left"></i>&nbsp;Tournaments</a>
+  <body>
+    <!-- Header: intro and nav bar -->
+    <section class="sub-header">
+      <nav>
+        <div class="logo-and-text">
+          <a href="../index.html">
+            <img src="../images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
         </div>
-        <div class="contact-button">
-          <a href="https://www.services.ny-go.org/event-details/1st-new-york-state-championships" class="hero-btn"><i class="fa fa-user-circle"></i>&nbsp;Register Here</a>
+        <div class="nav-links clearfix" id="navLinks">
+          <i
+            class="fa fa-window-close-o"
+            onclick="hideMenu()"
+            id="mobilemenu"
+          ></i>
+          <ul>
+            <li>
+              <a href="../about.html"
+                ><i class="fa fa-info-circle"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="../group-class.html"
+                ><i class="fa fa-graduation-cap"></i> Group Class</a
+              >
+            </li>
+            <li>
+              <a href="../private-lesson.html"
+                ><i class="fa fa-book"></i> Private Lesson</a
+              >
+            </li>
+            <li>
+              <a href="../tournaments.html"
+                ><i class="fa fa-trophy"></i> Events</a
+              >
+            </li>
+            <li>
+              <a href="../nyig_go.html"
+                ><i class="fa fa-video-camera"></i> Channel</a
+              >
+            </li>
+            <li>
+              <a href="../contact-us.html"
+                ><i class="fa fa-user-circle"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
+      </nav>
+      <div class="text-box" id="title-text">
+        <h2>The 1<sup>st</sup> New York State Championships</h2>
+        <div class="row btn" id="row">
+          <div class="contact-button">
+            <a href="../tournaments.html" class="hero-btn"
+              ><i class="fa fa-arrow-left"></i>&nbsp;Tournaments</a
+            >
+          </div>
+          <div class="contact-button">
+            <a
+              href="https://www.services.ny-go.org/event-details/1st-new-york-state-championships"
+              class="hero-btn"
+              ><i class="fa fa-user-circle"></i>&nbsp;Register Here</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- main content -->
-  <section class="main-content">
-    <h3 id="NYIG-Team" class="header-more-space"><i class="fa fa-info-circle"></i> Tournament overview</h3>
-    <p><strong>10-Year Reunion in NYC with $1200 Prize</strong></p>
-    <p>
-      After the New York Go Center permanently shut down 10 years ago, we not just lost a place for Go players to play Go, but a big family for us to laugh and share stories, to forget about pressure and unhappiness, and just enjoy some Go time. We welcome everyone to the 10-year reunion tournament in Manhattan!  
-    </p>
-    <p>
-      Thanks to a parent donor, all divisions from the double digit kyu to the open division will be awarded cash prizes. Youth divisions will be awarded with trophies and certificates. Additionally, the two champions in open and youth state championships tournaments will receive special designed trophies.
-    </p>
-    <p>
-      Registration for the 2023 New York State Championships is open to all players of all levels and will be held from Feb 25-26, 2023 at the New York Institute of Go, Midtown Manhattan, New York. 
-    </p>
-    <p>
-      The events include the Open Tournament, New York State Open Championship, New York Youth Championship with a maximum of 140 seats. Besides the main tournament games, we will also host evening events like Pair Go, Crazy Go, 9X9 and 13X13 Tournaments. The event is located in the center of Hell's Kitchen with a variety of delicious food. Come to enjoy Go, come for the reunion of old friends. We are looking forward to meeting you here!
-    </p>
-
-    <!-- <h3 id="NYIG-Team"><i class="fa fa-calendar"></i> Schedule</h3>
-    <p>
-      
-    </p> -->
-
-    <!-- Rules and regulations -->
-    <div class="schedule">
-      <div class="table-wrapper" id="tournament-info">
-        <table class="tuitions" id="schedule">
-          <tr>
-            <th><i class="fa fa-check"></i>&nbsp;Eligibility</th>
-            <td>Everyone</td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-calendar-check-o"></i>&nbsp;Time</th>
-            <td>
-              February 25 @ 9:00 am - February 26 @ 6:00 pm
-            </td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-sign-in"></i>&nbsp;Place</th>
-            <td>424 W 49th St., New York, NY 10019</td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-trophy"></i>&nbsp;Prizes</th>
-            <td>Open Division: $1200 for 1<sup>st</sup> place. Cash prizes in all divisions. </td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-codepen"></i>&nbsp;Rules</th>
-            <td>30 minutes main time + 3x30 second byoyomi. AGA rules. </td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-edit"></i>&nbsp;Registration</th>
-            <td>Submit the <a href="https://www.services.ny-go.org/event-details/1st-new-york-state-championships"><i class="fa fa-user-circle"></i>&nbsp;registration form</a></td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-hourglass-end"></i>&nbsp;Deadline</th>
-            <td>Early bird: February 19 @ 11:59pm EST</td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-calendar"></i>&nbsp;Schedule - Day 1</th>
-            <td>
-              <div class="center-around-colon">
-                <div><span>Check in</span>: <span>9:00 AM</span></div>
-                <div><span>Announcements</span>: <span>9:15 AM</span></div>
-                <div><span>Round 1</span>: <span>9:30 AM</span></div>
-                <div><span>Lunch</span>: <span>11:30 AM</span></div>
-                <div><span>Round 2</span>: <span>12:30 PM</span></div>
-                <div><span>Round 3</span>: <span>3:00 PM</span></div>
-                <div><span>Go night</span>: <span>6:00 - 10:00 PM</span></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th><i class="fa fa-calendar"></i>&nbsp;Schedule - Day 2</th>
-            <td>
-              <div class="center-around-colon">
-                <div><span>Venue open</span>: <span>9:00 AM</span></div>
-                <div><span>Round 4</span>: <span>9:30 AM</span></div>
-                <div><span>Lunch</span>: <span>11:30 AM</span></div>
-                <div><span>Round 5</span>: <span>12:30 PM</span></div>
-                <div><span>Round 6</span>: <span>3:00 PM</span></div>
-                <div><span>Awards</span>: <span>5:30 PM</span></div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-
-    <h3 id="NYIG-Team"><i class="fa fa-registered"></i> Registration Links</h3>
-    <p>
-      Interested in joining us? Register using the link below.
-    </p>
-    <p><a href="https://www.services.ny-go.org/event-details/1st-new-york-state-championships" class="hero-btn"><i class="fa fa-user-circle"></i>&nbsp;New York State Championships Registration</a>
-  </section>
-
-  <!-- Footer BEGIN -->
-  <section class="footer" id="footer">
-    <hr>
-    <form method="post" autocomplete="on" name="subscribe" id="subscribe">
-      <h4>Subscribe to Go news & events</h4>
-      <input type="text" class="name" name="Name" placeholder="Enter your name" required>
-      <input type="email" class="email" name="Email" placeholder="Enter your email" required>
-      <button onclick="" type="submit" name="Submit" class="hero-btn submit">Subscribe</button>
-    </form>
-  </section>
-  
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <div class="logo-and-text">
-        <a href="../index.html">
-          <img src="../images/logo-nobg.png" alt="<NYIG Logo>">
-          <span>NYIG</span>
-        </a>
-      </div>
-      <p class="footer-links">
-        <a href="../about.html">About</a>
-        <a href="../group-class.html">Group Class</a>
-        <a href="../private-lesson.html">Private Lesson</a>
-        <a href="../tournaments.html">Events</a>
-        <a href="../nyig_go.html">Channel</a>
-        <a href="../contact-us.html">Contact</a>
+    <!-- main content -->
+    <section class="main-content">
+      <h3 id="NYIG-Team" class="header-more-space">
+        <i class="fa fa-info-circle"></i> Tournament overview
+      </h3>
+      <p><strong>10-Year Reunion in NYC with $1200 Prize</strong></p>
+      <p>
+        After the New York Go Center permanently shut down 10 years ago, we not
+        just lost a place for Go players to play Go, but a big family for us to
+        laugh and share stories, to forget about pressure and unhappiness, and
+        just enjoy some Go time. We welcome everyone to the 10-year reunion
+        tournament in Manhattan!
       </p>
-      <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
-    </div>
-  
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>424 W 49th St, 1A</span> New York, NY</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+1.646.287.9536</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
-      </div>
-    </div>
-  
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>About the company</span>
-        Our mission promote and prolong the game of Go, the oldest board game still played in its original form, in North
-        America.
+      <p>
+        Thanks to a parent donor, all divisions from the double digit kyu to the
+        open division will be awarded cash prizes. Youth divisions will be
+        awarded with trophies and certificates. Additionally, the two champions
+        in open and youth state championships tournaments will receive special
+        designed trophies.
       </p>
-  
-      <div class="footer-icons">
-        <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook"></i></a>
-        <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube-play"></i></a>
-        <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"><i
-            class="fa fa-paypal"></i></a>
-        <a href="https://www.linkedin.com/company/nyig"><i class="fa fa-linkedin"></i></a>
-        <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter"></i></a>
+      <p>
+        Registration for the 2023 New York State Championships is open to all
+        players of all levels and will be held from Feb 25-26, 2023 at the New
+        York Institute of Go, Midtown Manhattan, New York.
+      </p>
+      <p>
+        The events include the Open Tournament, New York State Open
+        Championship, New York Youth Championship with a maximum of 140 seats.
+        Besides the main tournament games, we will also host evening events like
+        Pair Go, Crazy Go, 9X9 and 13X13 Tournaments. The event is located in
+        the center of Hell's Kitchen with a variety of delicious food. Come to
+        enjoy Go, come for the reunion of old friends. We are looking forward to
+        meeting you here!
+      </p>
+
+      <!-- Rules and regulations -->
+      <div class="schedule">
+        <div class="table-wrapper" id="tournament-info">
+          <table class="tuitions" id="schedule">
+            <tr>
+              <th><i class="fa fa-check"></i>&nbsp;Eligibility</th>
+              <td>Everyone</td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-calendar-check-o"></i>&nbsp;Time</th>
+              <td>February 25 @ 9:00 am - February 26 @ 6:00 pm</td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-sign-in"></i>&nbsp;Place</th>
+              <td>424 W 49th St., New York, NY 10019</td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-trophy"></i>&nbsp;Prizes</th>
+              <td>
+                Open Division: $1200 for 1<sup>st</sup> place. Cash prizes in
+                all divisions.
+              </td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-codepen"></i>&nbsp;Rules</th>
+              <td>30 minutes main time + 5x30 second byoyomi. AGA rules.</td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-edit"></i>&nbsp;Registration</th>
+              <td>
+                Submit the
+                <a
+                  href="https://www.services.ny-go.org/event-details/1st-new-york-state-championships"
+                  ><i class="fa fa-user-circle"></i>&nbsp;registration form</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-hourglass-end"></i>&nbsp;Deadline</th>
+              <td>Early bird: February 19 @ 11:59pm EST</td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-calendar"></i>&nbsp;Schedule - Day 1</th>
+              <td>
+                <div class="center-around-colon">
+                  <div><span>Check in</span>: <span>9:00 AM</span></div>
+                  <div><span>Announcements</span>: <span>9:15 AM</span></div>
+                  <div><span>Round 1</span>: <span>9:30 AM</span></div>
+                  <div><span>Lunch</span>: <span>11:30 AM</span></div>
+                  <div><span>Round 2</span>: <span>12:30 PM</span></div>
+                  <div><span>Round 3</span>: <span>3:00 PM</span></div>
+                  <div><span>Go night</span>: <span>6:00 - 10:00 PM</span></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th><i class="fa fa-calendar"></i>&nbsp;Schedule - Day 2</th>
+              <td>
+                <div class="center-around-colon">
+                  <div><span>Venue open</span>: <span>9:00 AM</span></div>
+                  <div><span>Round 4</span>: <span>9:30 AM</span></div>
+                  <div><span>Lunch</span>: <span>11:30 AM</span></div>
+                  <div><span>Round 5</span>: <span>12:30 PM</span></div>
+                  <div><span>Round 6</span>: <span>3:00 PM</span></div>
+                  <div><span>Awards</span>: <span>5:30 PM</span></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
-    </div>
-  
-  </footer>
-  <!-- Footer END -->
 
-  <script src="../js/sub.js"></script>
-  <script src="../js/nav_toggle.js"></script>
+      <h3 id="NYIG-Team">
+        <i class="fa fa-registered"></i> Registration Links
+      </h3>
+      <p>Interested in joining us? Register using the link below.</p>
+      <p>
+        <a
+          href="https://www.services.ny-go.org/event-details/1st-new-york-state-championships"
+          class="hero-btn"
+          ><i class="fa fa-user-circle"></i>&nbsp;New York State Championships
+          Registration</a
+        >
+      </p>
+    </section>
 
-</body>
+    <!-- Footer BEGIN -->
+    <section class="footer" id="footer">
+      <hr />
+      <form method="post" autocomplete="on" name="subscribe" id="subscribe">
+        <h4>Subscribe to Go news & events</h4>
+        <input
+          type="text"
+          class="name"
+          name="Name"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          class="email"
+          name="Email"
+          placeholder="Enter your email"
+          required
+        />
+        <button onclick="" type="submit" name="Submit" class="hero-btn submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
 
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="logo-and-text">
+          <a href="../index.html">
+            <img src="../images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <p class="footer-links">
+          <a href="../about.html">About</a>
+          <a href="../group-class.html">Group Class</a>
+          <a href="../private-lesson.html">Private Lesson</a>
+          <a href="../tournaments.html">Events</a>
+          <a href="../nyig_go.html">Channel</a>
+          <a href="../contact-us.html">Contact</a>
+        </p>
+        <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>424 W 49th St, 1A</span> New York, NY</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.646.287.9536</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Our mission promote and prolong the game of Go, the oldest board game
+          still played in its original form, in North America.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/mingnyig"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="http://youtube.com/nyig_go"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a
+            href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"
+            ><i class="fa fa-paypal"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/nyig"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/nyig_go"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
+
+    <script src="../js/sub.js"></script>
+    <script src="../js/nav_toggle.js"></script>
+  </body>
 </html>
