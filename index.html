@@ -1,267 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-nobg.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="icon" type="image/x-icon" href="images/logo-nobg.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <body>
+    <!-- Header: intro and nav bar -->
+    <section class="header">
+      <nav>
+        <div class="logo-and-text">
+          <a href="index.html">
+            <img src="images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <div class="nav-links clearfix" id="navLinks">
+          <i
+            class="fa fa-window-close-o"
+            onclick="hideMenu()"
+            id="mobilemenu"
+          ></i>
+          <ul>
+            <li>
+              <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+            </li>
+            <li>
+              <a href="group-class.html"
+                ><i class="fa fa-graduation-cap"></i> Group Class</a
+              >
+            </li>
+            <li>
+              <a href="private-lesson.html"
+                ><i class="fa fa-book"></i> Private Lesson</a
+              >
+            </li>
+            <li>
+              <a href="tournaments.html"><i class="fa fa-trophy"></i> Events</a>
+            </li>
+            <li>
+              <a href="nyig_go.html"
+                ><i class="fa fa-video-camera"></i> Channel</a
+              >
+            </li>
+            <li>
+              <a href="contact-us.html"
+                ><i class="fa fa-user-circle"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
+      </nav>
 
-<body>
-  <!-- Header: intro and nav bar -->
-  <section class="header">
-    <nav>
-      <div class="logo-and-text">
-        <a href="index.html">
-          <img src="images/logo-nobg.png" alt="<NYIG Logo>">
-          <span>NYIG</span>
-        </a>
-      </div>
-      <div class="nav-links clearfix" id="navLinks">
-        <i class="fa fa-window-close-o" onclick="hideMenu()" id="mobilemenu"></i>
-        <ul>
-          <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
-          <li><a href="group-class.html"><i class="fa fa-graduation-cap"></i> Group Class</a></li>
-          <li><a href="private-lesson.html"><i class="fa fa-book"></i> Private Lesson</a></li>
-          <li><a href="tournaments.html"><i class="fa fa-trophy"></i> Events</a></li>
-          <li><a href="nyig_go.html"><i class="fa fa-video-camera"></i> Channel</a></li>
-          <li><a href="contact-us.html"><i class="fa fa-user-circle"></i> Contact</a></li>
-        </ul>
-      </div>
-      <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
-    </nav>
-
-    <div class="text-box" id="title-text">
-      <h1>New York Institute of Go</h1>
-      <p class="large-text">
-        Go: A lifetime's worth of complexity in a game learned in 10 minutes.
-      </p>
-      <div class="row btn front" id="row">
-        <div class="contact-button front">
-          <a href="group-class.html" class="hero-btn"><i class="fa fa-graduation-cap"></i>&nbsp;Classes</a>
-        </div>
-        <div class="contact-button front">
-          <a href="private-lesson.html" class="hero-btn"><i class="fa fa-book"></i>&nbsp;1-on-1</a>
-        </div>
-        <div class="contact-button front">
-          <a href="camps/winter_camp.html" class="hero-btn"><i class="fa fa-futbol-o"></i>&nbsp;Camps</a>
-        </div>
-        <!-- <div class="contact-button front">
+      <div class="text-box" id="title-text">
+        <h1>New York Institute of Go</h1>
+        <p class="large-text">
+          Go: A lifetime's worth of complexity in a game learned in 10 minutes.
+        </p>
+        <div class="row btn front" id="row">
+          <div class="contact-button front">
+            <a href="group-class.html" class="hero-btn"
+              ><i class="fa fa-graduation-cap"></i>&nbsp;Classes</a
+            >
+          </div>
+          <div class="contact-button front">
+            <a href="private-lesson.html" class="hero-btn"
+              ><i class="fa fa-book"></i>&nbsp;1-on-1</a
+            >
+          </div>
+          <div class="contact-button front">
+            <a href="camps/summer-camp.html" class="hero-btn"
+              ><i class="fa fa-futbol-o"></i>&nbsp;Summer Camp</a
+            >
+          </div>
+          <!-- <div class="contact-button front">
           <a href="tournaments.html" class="hero-btn"><i class="fa fa-calendar-check-o"></i>&nbsp;Events</a>
         </div> -->
+        </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-
-  <!-- What is Go? -->
-  <section class="what-is-go">
-    <div class="text-left-img-right">
-      <img src="images/game2.jpg" class="image">
-      <div class="content">
-        <h2 class="title">What is Go?</h2>
-        <p class="paragraph">
-          Go (wéiqí, baduk) is a strategy board game with simple rules. Two players, one takes black while the other takes white, take turns placing one stone on a board. The goal of the game is to surround more territory than the opponent. Go originated in China over 3,000 years ago and is the oldest board game continuously played until the present day.
-        </p>
-        <p class="paragraph">
-          There are more than 10<sup>170</sup> <a href="https://tromp.github.io/go/gostate.pdf" target="_blank">possible board configurations</a>, making Go <a href="https://en.wikipedia.org/wiki/Googol" target="_blank">a googol</a> times more complex than chess. Go is a profoundly complex board game, requiring abstraction and multiple layers of strategic thinking.
-        </p>
-        <div class="row btn">
-          <div class="content">
-            <a class="hero-btn" href="https://www.youtube.com/watch?v=eNpJF0BzUig" target="_blank">Rules of Go video</a>
+    <!-- What is Go? -->
+    <section class="what-is-go">
+      <div class="text-left-img-right">
+        <img src="images/game2.jpg" class="image" />
+        <div class="content">
+          <h2 class="title">What is Go?</h2>
+          <p class="paragraph">
+            Go (wéiqí, baduk) is a strategy board game with simple rules. Two
+            players, one takes black while the other takes white, take turns
+            placing one stone on a board. The goal of the game is to surround
+            more territory than the opponent. Go originated in China over 3,000
+            years ago and is the oldest board game continuously played until the
+            present day.
+          </p>
+          <p class="paragraph">
+            There are more than 10<sup>170</sup>
+            <a href="https://tromp.github.io/go/gostate.pdf" target="_blank"
+              >possible board configurations</a
+            >, making Go
+            <a href="https://en.wikipedia.org/wiki/Googol" target="_blank"
+              >a googol</a
+            >
+            times more complex than chess. Go is a profoundly complex board
+            game, requiring abstraction and multiple layers of strategic
+            thinking.
+          </p>
+          <div class="row btn">
+            <div class="content">
+              <a
+                class="hero-btn"
+                href="https://www.youtube.com/watch?v=eNpJF0BzUig"
+                target="_blank"
+                >Rules of Go video</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Why Learn Go? -->
-  <section class="why-learn-go">
-    <div class="text-left-img-right">
-      <img src="images/stones2.png" class="image">
-      <div class="content">
-        <h2 class="title">Why Learn Go?</h2>
-        <p class="paragraph">
-          A brief list of the many benefits of learning Go:
-        </p>
-        <ul class="paragraph">
-          <li>Increases attention span, allowing longer periods of concentration.</li>
-          <li>Strengthens the mind via engaging strategic battles with the opponent.</li>
-          <li>Overcome and embrace defeat.</li>
-          <li>Learn how to evaluate small and large, and local and global trades. </li>
-          <li>Exercise leadership by building empires of stone soldiers from an empty board.</li>
-          <li>Encourages creativity as memorization is unrewarding beyond the basics. </li>
-        </ul>
-        <div class="row btn">
-          <div class="content">
-            <a class="hero-btn" href="https://en.wikibooks.org/wiki/Go/Why_should_I_learn_to_play_Go%3F#:~:text=Go%20provides%20not%20only%20opportunities,even%20more%20so%20than%20Chess." target="_blank">More Reasons to Learn Go</a>
+    <!-- Why Learn Go? -->
+    <section class="why-learn-go">
+      <div class="text-left-img-right">
+        <img src="images/stones2.png" class="image" />
+        <div class="content">
+          <h2 class="title">Why Learn Go?</h2>
+          <p class="paragraph">
+            A brief list of the many benefits of learning Go:
+          </p>
+          <ul class="paragraph">
+            <li>
+              Increases attention span, allowing longer periods of
+              concentration.
+            </li>
+            <li>
+              Strengthens the mind via engaging strategic battles with the
+              opponent.
+            </li>
+            <li>Overcome and embrace defeat.</li>
+            <li>
+              Learn how to evaluate small and large, and local and global
+              trades.
+            </li>
+            <li>
+              Exercise leadership by building empires of stone soldiers from an
+              empty board.
+            </li>
+            <li>
+              Encourages creativity as memorization is unrewarding beyond the
+              basics.
+            </li>
+          </ul>
+          <div class="row btn">
+            <div class="content">
+              <a
+                class="hero-btn"
+                href="https://en.wikibooks.org/wiki/Go/Why_should_I_learn_to_play_Go%3F#:~:text=Go%20provides%20not%20only%20opportunities,even%20more%20so%20than%20Chess."
+                target="_blank"
+                >More Reasons to Learn Go</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Courses -->
-  <section class="courses">
-    <h1>Programs</h1>
-    <div class="row" id="row">
-      <div class="course-col">
-        <h1><a href="group-class.html">Group Classes</a></h1>
-        <h3>Fun classes in small groups</h3>
-        <ul>
-          <li>Max 10 students per class</li>
-          <li>Targeted guidance for each student</li>
-          <li>Hands-on tutorials & in-class practice</li>
-          <li>Available online & on-site</li>
-        </ul>
-      </div>
-      <div class="course-col">
-        <h1><a href="private-lesson.html">Private Lessons</a></h1>
-        <h3>Professional 1-on-1 Coaching</h3>
-        <ul>
-          <li>Custom study plans</li>
-          <li>Flexible scheduling</li>
-          <li>Available online & on-site</li>
-          <li>Live recording available (online)</li>
-        </ul>
-      </div>
-      <div class="course-col">
-        <h1><a href="#">Adult Classes</a></h1>
-        <h3>Interactive Mental Training</h3>
-        <p>Coming soon...</p>
-      </div>
-    </div>
-  
-  </section>
-
-  <!--- Locations -->
-  <section class="locations" id="locations">
-    <h1>Locations</h1>
-
-    <div class="row" id="row">
-      <div class="locations-col">
-        <img src="images/NYIG_queens.png" alt="NYIG Little Neck">
-        <div class="layer">
-          <h3><a href="contact-us.html">Little Neck, NY</a></h3>
+    <!-- Courses -->
+    <section class="courses">
+      <h1>Programs</h1>
+      <div class="row" id="row">
+        <div class="course-col">
+          <h1><a href="group-class.html">Group Classes</a></h1>
+          <h3>Fun classes in small groups</h3>
+          <ul>
+            <li>Max 10 students per class</li>
+            <li>Targeted guidance for each student</li>
+            <li>Hands-on tutorials & in-class practice</li>
+            <li>Available online & on-site</li>
+          </ul>
+        </div>
+        <div class="course-col">
+          <h1><a href="private-lesson.html">Private Lessons</a></h1>
+          <h3>Professional 1-on-1 Coaching</h3>
+          <ul>
+            <li>Custom study plans</li>
+            <li>Flexible scheduling</li>
+            <li>Available online & on-site</li>
+            <li>Live recording available (online)</li>
+          </ul>
+        </div>
+        <div class="course-col">
+          <h1><a href="#">Adult Classes</a></h1>
+          <h3>Interactive Mental Training</h3>
+          <p>Coming soon...</p>
         </div>
       </div>
-      <div class="locations-col">
-        <img src="images/NYIG_manhattan.png" alt="NYIG Manhattan">
-        <div class="layer">
-          <h3><a href="contact-us.html">Manhattan, NY</a></h3>
+    </section>
+
+    <!--- Locations -->
+    <section class="locations" id="locations">
+      <h1>Locations</h1>
+
+      <div class="row" id="row">
+        <div class="locations-col">
+          <img src="images/NYIG_queens.png" alt="NYIG Little Neck" />
+          <div class="layer">
+            <h3><a href="contact-us.html">Little Neck, NY</a></h3>
+          </div>
+        </div>
+        <div class="locations-col">
+          <img src="images/NYIG_manhattan.png" alt="NYIG Manhattan" />
+          <div class="layer">
+            <h3><a href="contact-us.html">Manhattan, NY</a></h3>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--- Facilities -->
-  <section class="facils" id="facils">
-    <h1>Facilities</h1>
+    <!--- Facilities -->
+    <section class="facils" id="facils">
+      <h1>Facilities</h1>
 
-    <div class="row" id="row">
-      <div class="facils-col">
-        <img src="images/stephanie_classroom.jpg" alt="Classroom">
-        <h3>Classroom</h3>
-        <p>Magnetic boards and projectors fascilitate an inclusive learning environment. Our experienced teachers also
-          compete at the international level.</p>
+      <div class="row" id="row">
+        <div class="facils-col">
+          <img src="images/stephanie_classroom.jpg" alt="Classroom" />
+          <h3>Classroom</h3>
+          <p>
+            Magnetic boards and projectors fascilitate an inclusive learning
+            environment. Our experienced teachers also compete at the
+            international level.
+          </p>
+        </div>
+
+        <div class="facils-col">
+          <img src="images/classroom_sq.png" alt="Textbook" />
+          <h3>Curriculum</h3>
+          <p>
+            <em>The Divine Move of Go</em> textbooks at NYIG provide systematic
+            learning from beginner to expert.Written by professionals.
+          </p>
+        </div>
+        <div class="facils-col">
+          <img src="images/equipment.jpg" alt="Equipment" />
+          <h3>Equipment</h3>
+          <p>
+            We carry slate and yunzi Go stones. Our Go boards are primarily
+            19x19, but smaller sizes are also available. Contact us if you are
+            interested in an everyday or authentic Go set.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta" id="cta">
+      <h1>Enroll in an Online Course from<br />Anywhere in the World</h1>
+      <a href="contact-us.html" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- Footer BEGIN -->
+    <section class="footer" id="footer">
+      <hr />
+      <form method="post" autocomplete="on" name="subscribe" id="subscribe">
+        <h4>Subscribe to Go news & events</h4>
+        <input
+          type="text"
+          class="name"
+          name="Name"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          class="email"
+          name="Email"
+          placeholder="Enter your email"
+          required
+        />
+        <button onclick="" type="submit" name="Submit" class="hero-btn submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="logo-and-text">
+          <a href="index.html">
+            <img src="images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <p class="footer-links">
+          <a href="about.html">About</a>
+          <a href="group-class.html">Group Class</a>
+          <a href="private-lesson.html">Private Lesson</a>
+          <a href="tournaments.html">Events</a>
+          <a href="nyig_go.html">Channel</a>
+          <a href="contact-us.html">Contact</a>
+        </p>
+        <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
       </div>
 
-      <div class="facils-col">
-        <img src="images/classroom_sq.png" alt="Textbook">
-        <h3>Curriculum</h3>
-        <p><em>The Divine Move of Go</em> textbooks at NYIG provide systematic learning from beginner to expert.Written
-          by professionals.</p>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>424 W 49th St, 1A</span> New York, NY</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.646.287.9536</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
+        </div>
       </div>
-      <div class="facils-col">
-        <img src="images/equipment.jpg" alt="Equipment">
-        <h3>Equipment</h3>
-        <p>We carry slate and yunzi Go stones. Our Go boards are primarily 19x19, but smaller sizes are also available.
-          Contact us if you are interested in an everyday or authentic Go set. </p>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Our mission promote and prolong the game of Go, the oldest board game
+          still played in its original form, in North America.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/mingnyig"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="http://youtube.com/nyig_go"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a
+            href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"
+            ><i class="fa fa-paypal"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/nyig"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/nyig_go"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
+    <!-- Footer END -->
 
-  <!-- Call to Action -->
-  <section class="cta" id="cta">
-    <h1>Enroll in an Online Course from<br>Anywhere in the World</h1>
-    <a href="contact-us.html" class="hero-btn">Contact Us</a>
-  </section>
-
-
-  <!-- Footer BEGIN -->
-  <section class="footer" id="footer">
-    <hr>
-    <form method="post" autocomplete="on" name="subscribe" id="subscribe">
-      <h4>Subscribe to Go news & events</h4>
-      <input type="text" class="name" name="Name" placeholder="Enter your name" required>
-      <input type="email" class="email" name="Email" placeholder="Enter your email" required>
-      <button onclick="" type="submit" name="Submit" class="hero-btn submit">Subscribe</button>
-    </form>
-  </section>
-
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <div class="logo-and-text">
-        <a href="index.html">
-          <img src="images/logo-nobg.png" alt="<NYIG Logo>">
-          <span>NYIG</span>
-        </a>
-      </div>
-      <p class="footer-links">
-        <a href="about.html">About</a>
-        <a href="group-class.html">Group Class</a>
-        <a href="private-lesson.html">Private Lesson</a>
-        <a href="tournaments.html">Events</a>
-        <a href="nyig_go.html">Channel</a>
-        <a href="contact-us.html">Contact</a>
-      </p>
-      <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
-    </div>
-
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>424 W 49th St, 1A</span> New York, NY</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+1.646.287.9536</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
-      </div>
-    </div>
-
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>About the company</span>
-        Our mission promote and prolong the game of Go, the oldest board game still played in its original form, in North America.
-      </p>
-
-      <div class="footer-icons">
-        <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook"></i></a>
-        <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube-play"></i></a>
-        <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"><i class="fa fa-paypal"></i></a>
-        <a href="https://www.linkedin.com/company/nyig"><i class="fa fa-linkedin"></i></a>
-        <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter"></i></a>
-      </div>
-    </div>
-
-  </footer>
-  <!-- Footer END -->
-
-  <script src="js/sub.js"></script>
-  <script src="js/nav_toggle.js"></script>
-
-</body>
-
+    <script src="js/sub.js"></script>
+    <script src="js/nav_toggle.js"></script>
+  </body>
 </html>
