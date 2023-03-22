@@ -1,228 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Lesson</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-nobg.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Private Lesson</title>
-  <link rel="icon" type="image/x-icon" href="images/logo-nobg.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
-  <!-- Header: intro and nav bar -->
-  <section class="sub-header">
-    <nav>
-      <div class="logo-and-text">
-        <a href="index.html">
-          <img src="images/logo-nobg.png" alt="<NYIG Logo>">
-          <span>NYIG</span>
-        </a>
+  <body>
+    <!-- Header: intro and nav bar -->
+    <section class="sub-header">
+      <nav>
+        <div class="logo-and-text">
+          <a href="index.html">
+            <img src="images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <div class="nav-links clearfix" id="navLinks">
+          <i
+            class="fa fa-window-close-o"
+            onclick="hideMenu()"
+            id="mobilemenu"
+          ></i>
+          <ul>
+            <li>
+              <a href="tournaments/usgc2023.html">
+                <img src="images/usgc2023.png" width="45" /> USGC
+              </a>
+            </li>
+            <li>
+              <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+            </li>
+            <li>
+              <a href="group-class.html"
+                ><i class="fa fa-graduation-cap"></i> Group Class</a
+              >
+            </li>
+            <li>
+              <a href="private-lesson.html"
+                ><i class="fa fa-book"></i> Private Lesson</a
+              >
+            </li>
+            <li>
+              <a href="tournaments.html"><i class="fa fa-trophy"></i> Events</a>
+            </li>
+            <li>
+              <a href="nyig_go.html"
+                ><i class="fa fa-video-camera"></i> Channel</a
+              >
+            </li>
+            <li>
+              <a href="contact-us.html"
+                ><i class="fa fa-user-circle"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
+      </nav>
+      <div class="text-box" id="title-text">
+        <h1>Private Lessons</h1>
+        <a href="https://www.services.ny-go.org/" class="hero-btn"
+          ><i class="fa fa-pencil-square-o"></i>&nbsp;Register</a
+        >
       </div>
-      <div class="nav-links clearfix" id="navLinks">
-        <i class="fa fa-window-close-o" onclick="hideMenu()" id="mobilemenu"></i>
-        <ul>
-          <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
-          <li><a href="group-class.html"><i class="fa fa-graduation-cap"></i> Group Class</a></li>
-          <li><a href="private-lesson.html"><i class="fa fa-book"></i> Private Lesson</a></li>
-          <li><a href="tournaments.html"><i class="fa fa-trophy"></i> Events</a></li>
-          <li><a href="nyig_go.html"><i class="fa fa-video-camera"></i> Channel</a></li>
-          <li><a href="contact-us.html"><i class="fa fa-user-circle"></i> Contact</a></li>
-        </ul>
-      </div>
-      <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
-    </nav>
-    <div class="text-box" id="title-text">
-      <h1>Private Lessons</h1>
-      <a href="https://www.services.ny-go.org/" class="hero-btn"><i class="fa fa-pencil-square-o"></i>&nbsp;Register</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Start content section -->
-  <section class="main-content">
-    <h2 class="header-more-space">Learn from World Class Professionals</h2>
-    <p>
-      Our private lessons are offered in combinations of teaching games, game reviews, Go problem homework, and general
-      lectures. In the first lesson, the instructor will ask the student general questions to grasp the student's
-      current strengths and weaknesses. Then, a study plan will be designed for the student.
-    </p>
-    <p>
-      For the best results, students are strongly encouraged to practice between each session. Instructors assign
-      homework weekly, which include a combination of solving Go problems, playing games, doing textbook questions,
-      self-game reviewing, and studying professional games. <em>The Divine Move of Go</em> textbooks at NYIG provide a
-      systematic instruction series of 14 books from beginner to 5d. Purchasing a textbook is strongly recommended for
-      complete coverage of the core concepts.
-    </p>
-    <p>
-      Scheduling is flexible on a weekly or biweekly frequency. A live recording of each online lesson is available upon
-      request. If you have any questions, please send an email to <a href="mailto: info@ny-go.org">info@ny-go.org</a>
-      with <em>Private Lesson</em> in the title.
-    </p>
-
-    <h2>Online or In-Person</h2>
-    <p>
-      Upon registration, your instructor will send a welcome email to get in touch. After the first lesson, we will
-      follow up to discuss enrollment details. The instructor will recommend a suitable volume of <em>The Divine Move of
-        Go</em>. The textbook is optional for students with preference for practical game reviews.
-    </p>
-
-    <p>
-      <i class="fa fa-laptop"></i> <strong>Online:</strong> Students will connect with the teacher via <a
-        href="https://zoom.us/">Zoom</a> and use <a href="https://www.gokgs.com">KGS</a>, <a
-        href="https://www.online-go.com">OGS</a>, or the <a href="https://www.foxwq.com/soft.html">Fox Go Server</a>.
-      Students may indicate a preference during registration. Please verify the working status of Zoom and Go software
-      <strong>in advance</strong>.
-    </p>
-    <p>
-      <i class="fa fa-institution"></i> <strong>Onsite:</strong> Indicate your desired teacher & location and your
-      teacher will meet you there. We offer on-site private lessons at Manhattan and Little Neck. Please arrive promptly.
-    </p>
-    <h3>Tuition</h3>
-    <p>
-      <i class="fa fa-commenting-o"></i> <strong>Note:</strong> Only first-time students are eligible for a trial class.
-      Prices in US dollars.
-    </p>
-    <p>
-      <i class="fa fa-book"></i> <strong>Textbooks:</strong> Depending on your progress, following the NYIG curriculum
-      is recommended. Textbooks are $50 each (+$20 shipping & handling) and includes an additional exercise book with
-      700+ practice problems.
-    </p>
-    <h4>Private Lessons</h4>
-    <div class="table-wrapper">
-      <table class="tuitions">
-        <tr>
-          <th>Location</th>
-          <th>Online</th>
-          <th>Little Neck</th>
-          <th>Manhattan</th>
-        </tr>
-        <tr>
-          <td>1-hour Trial</td>
-          <td>88</td>
-          <td>99</td>
-          <td>109</td>
-        </tr>
-        <tr>
-          <td>10-hour Lesson Package</td>
-          <td>880<br>(88 per hour)</td>
-          <td>990<br>(99 per hour)</td>
-          <td>1090<br>(109 per hour)</td>
-        </tr>
-        <tr>
-          <td>20-hour Lesson Package</td>
-          <td>1672<br>(83 per hour)</td>
-          <td>1881<br>(94 per hour)</td>
-          <td>2071<br>(103 per hour)</td>
-        </tr>
-      </table>
-    </div>
-    <h4>Semi-Private Lessons</h4>
-    <p>Two to four students per class. Prices are per student.</p>
-    <div class="table-wrapper">
-      <table class="tuitions">
-        <tr>
-          <th>Location</th>
-          <th>Online</th>
-          <th>Little Neck</th>
-          <th>Manhattan</th>
-        </tr>
-        <tr>
-          <td>1-hour Trial</td>
-          <td>64</td>
-          <td>72</td>
-          <td>79</td>
-        </tr>
-        <tr>
-          <td>10-hour Lesson Package</td>
-          <td>640<br>(64 per hour)</td>
-          <td>720<br>(72 per hour)</td>
-          <td>790<br>(79 per hour)</td>
-        </tr>
-        <tr>
-          <td>20-hour Lesson Package</td>
-          <td>1216<br>(60 per hour)</td>
-          <td>1368<br>(68 per hour)</td>
-          <td>1501<br>(75 per hour)</td>
-        </tr>
-      </table>
-    </div>
-  </section>
-
-  <!-- Footer BEGIN -->
-  <section class="footer" id="footer">
-    <hr>
-    <form method="post" autocomplete="on" name="subscribe" id="subscribe">
-      <h4>Subscribe to Go news & events</h4>
-      <input type="text" class="name" name="Name" placeholder="Enter your name" required>
-      <input type="email" class="email" name="Email" placeholder="Enter your email" required>
-      <button onclick="" type="submit" name="Submit" class="hero-btn submit">Subscribe</button>
-    </form>
-  </section>
-  
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <div class="logo-and-text">
-        <a href="index.html">
-          <img src="images/logo-nobg.png" alt="<NYIG Logo>">
-          <span>NYIG</span>
-        </a>
-      </div>
-      <p class="footer-links">
-        <a href="about.html">About</a>
-        <a href="group-class.html">Group Class</a>
-        <a href="private-lesson.html">Private Lesson</a>
-        <a href="tournaments.html">Events</a>
-        <a href="nyig_go.html">Channel</a>
-        <a href="contact-us.html">Contact</a>
+    <!-- Start content section -->
+    <section class="main-content">
+      <h2 class="header-more-space">Learn from World Class Professionals</h2>
+      <p>
+        Our private lessons are offered in combinations of teaching games, game
+        reviews, Go problem homework, and general lectures. In the first lesson,
+        the instructor will ask the student general questions to grasp the
+        student's current strengths and weaknesses. Then, a study plan will be
+        designed for the student.
       </p>
-      <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
-    </div>
-  
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>424 W 49th St, 1A</span> New York, NY</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+1.646.287.9536</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
-      </div>
-    </div>
-  
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>About the company</span>
-        Our mission promote and prolong the game of Go, the oldest board game still played in its original form, in North
-        America.
+      <p>
+        For the best results, students are strongly encouraged to practice
+        between each session. Instructors assign homework weekly, which include
+        a combination of solving Go problems, playing games, doing textbook
+        questions, self-game reviewing, and studying professional games.
+        <em>The Divine Move of Go</em> textbooks at NYIG provide a systematic
+        instruction series of 14 books from beginner to 5d. Purchasing a
+        textbook is strongly recommended for complete coverage of the core
+        concepts.
       </p>
-  
-      <div class="footer-icons">
-        <a href="https://www.facebook.com/mingnyig"><i class="fa fa-facebook"></i></a>
-        <a href="http://youtube.com/nyig_go"><i class="fa fa-youtube-play"></i></a>
-        <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"><i
-            class="fa fa-paypal"></i></a>
-        <a href="https://www.linkedin.com/company/nyig"><i class="fa fa-linkedin"></i></a>
-        <a href="https://twitter.com/nyig_go"><i class="fa fa-twitter"></i></a>
+      <p>
+        Scheduling is flexible on a weekly or biweekly frequency. A live
+        recording of each online lesson is available upon request. If you have
+        any questions, please send an email to
+        <a href="mailto: info@ny-go.org">info@ny-go.org</a> with
+        <em>Private Lesson</em> in the title.
+      </p>
+
+      <h2>Online or In-Person</h2>
+      <p>
+        Upon registration, your instructor will send a welcome email to get in
+        touch. After the first lesson, we will follow up to discuss enrollment
+        details. The instructor will recommend a suitable volume of
+        <em>The Divine Move of Go</em>. The textbook is optional for students
+        with preference for practical game reviews.
+      </p>
+
+      <p>
+        <i class="fa fa-laptop"></i> <strong>Online:</strong> Students will
+        connect with the teacher via <a href="https://zoom.us/">Zoom</a> and use
+        <a href="https://www.gokgs.com">KGS</a>,
+        <a href="https://www.online-go.com">OGS</a>, or the
+        <a href="https://www.foxwq.com/soft.html">Fox Go Server</a>. Students
+        may indicate a preference during registration. Please verify the working
+        status of Zoom and Go software <strong>in advance</strong>.
+      </p>
+      <p>
+        <i class="fa fa-institution"></i> <strong>Onsite:</strong> Indicate your
+        desired teacher & location and your teacher will meet you there. We
+        offer on-site private lessons at Manhattan and Little Neck. Please
+        arrive promptly.
+      </p>
+      <h3>Tuition</h3>
+      <p>
+        <i class="fa fa-commenting-o"></i> <strong>Note:</strong> Only
+        first-time students are eligible for a trial class. Prices in US
+        dollars.
+      </p>
+      <p>
+        <i class="fa fa-book"></i> <strong>Textbooks:</strong> Depending on your
+        progress, following the NYIG curriculum is recommended. Textbooks are
+        $50 each (+$20 shipping & handling) and includes an additional exercise
+        book with 700+ practice problems.
+      </p>
+      <h4>Private Lessons</h4>
+      <div class="table-wrapper">
+        <table class="tuitions">
+          <tr>
+            <th>Location</th>
+            <th>Online</th>
+            <th>Little Neck</th>
+            <th>Manhattan</th>
+          </tr>
+          <tr>
+            <td>1-hour Trial</td>
+            <td>88</td>
+            <td>99</td>
+            <td>109</td>
+          </tr>
+          <tr>
+            <td>10-hour Lesson Package</td>
+            <td>880<br />(88 per hour)</td>
+            <td>990<br />(99 per hour)</td>
+            <td>1090<br />(109 per hour)</td>
+          </tr>
+          <tr>
+            <td>20-hour Lesson Package</td>
+            <td>1672<br />(83 per hour)</td>
+            <td>1881<br />(94 per hour)</td>
+            <td>2071<br />(103 per hour)</td>
+          </tr>
+        </table>
       </div>
-    </div>
-  
-  </footer>
-  <!-- Footer END -->
+      <h4>Semi-Private Lessons</h4>
+      <p>Two to four students per class. Prices are per student.</p>
+      <div class="table-wrapper">
+        <table class="tuitions">
+          <tr>
+            <th>Location</th>
+            <th>Online</th>
+            <th>Little Neck</th>
+            <th>Manhattan</th>
+          </tr>
+          <tr>
+            <td>1-hour Trial</td>
+            <td>64</td>
+            <td>72</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>10-hour Lesson Package</td>
+            <td>640<br />(64 per hour)</td>
+            <td>720<br />(72 per hour)</td>
+            <td>790<br />(79 per hour)</td>
+          </tr>
+          <tr>
+            <td>20-hour Lesson Package</td>
+            <td>1216<br />(60 per hour)</td>
+            <td>1368<br />(68 per hour)</td>
+            <td>1501<br />(75 per hour)</td>
+          </tr>
+        </table>
+      </div>
+    </section>
 
-  <script src="js/sub.js"></script>
-  <script src="js/nav_toggle.js"></script>
+    <!-- Footer BEGIN -->
+    <section class="footer" id="footer">
+      <hr />
+      <form method="post" autocomplete="on" name="subscribe" id="subscribe">
+        <h4>Subscribe to Go news & events</h4>
+        <input
+          type="text"
+          class="name"
+          name="Name"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          class="email"
+          name="Email"
+          placeholder="Enter your email"
+          required
+        />
+        <button onclick="" type="submit" name="Submit" class="hero-btn submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
 
-</body>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="logo-and-text">
+          <a href="index.html">
+            <img src="images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <p class="footer-links">
+          <a href="about.html">About</a>
+          <a href="group-class.html">Group Class</a>
+          <a href="private-lesson.html">Private Lesson</a>
+          <a href="tournaments.html">Events</a>
+          <a href="nyig_go.html">Channel</a>
+          <a href="contact-us.html">Contact</a>
+        </p>
+        <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
+      </div>
 
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>424 W 49th St, 1A</span> New York, NY</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.646.287.9536</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Our mission promote and prolong the game of Go, the oldest board game
+          still played in its original form, in North America.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/mingnyig"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="http://youtube.com/nyig_go"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a
+            href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"
+            ><i class="fa fa-paypal"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/nyig"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/nyig_go"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
+
+    <script src="js/sub.js"></script>
+    <script src="js/nav_toggle.js"></script>
+  </body>
 </html>
