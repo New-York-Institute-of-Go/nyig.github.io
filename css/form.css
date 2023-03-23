@@ -1,0 +1,47 @@
+.header.form-header {
+  min-height: 35vh;
+}
+
+.contact-col form {
+  width: 100%;
+}
+
+.contact-form#usgc-form {
+  margin-top: 15px;
+}
+
+.contact-col form input,
+.contact-col form textarea,
+.contact-col form select {
+  max-width: 500px;
+}
+
+.contact-col form input.largerCheckbox {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-col.form button {
+  float: right !important;
+}
+
+.hero-btn.form.submit {
+  margin-top: 20px;
+}
+
+.form-flex-outer li,
+.form-flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-flex-outer > li > label,
+.form-flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 300px;
+}
+.form-flex-outer > li > label + *,
+.form-flex-inner {
+  flex: 1 0 220px;
+}

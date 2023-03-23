@@ -577,6 +577,7 @@ nav {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   font-size: 14px;

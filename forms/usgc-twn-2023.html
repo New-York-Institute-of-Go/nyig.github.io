@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYIG @ USGC</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-nobg.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header: intro and nav bar -->
+    <section class="header form-header">
+      <nav>
+        <div class="logo-and-text">
+          <a href="../index.html">
+            <img src="../images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <div class="nav-links clearfix" id="navLinks">
+          <i
+            class="fa fa-window-close-o"
+            onclick="hideMenu()"
+            id="mobilemenu"
+          ></i>
+          <ul>
+            <li>
+              <a href="../tournaments/usgc2023.html"
+                ><img src="../images/usgc2023.png" width="45" /> USGC</a
+              >
+            </li>
+            <li>
+              <a href="../about.html"
+                ><i class="fa fa-info-circle"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="../group-class.html"
+                ><i class="fa fa-graduation-cap"></i> Group Class</a
+              >
+            </li>
+            <li>
+              <a href="../private-lesson.html"
+                ><i class="fa fa-book"></i> Private Lesson</a
+              >
+            </li>
+            <li>
+              <a href="../tournaments.html"
+                ><i class="fa fa-trophy"></i> Events</a
+              >
+            </li>
+            <li>
+              <a href="nyig_go.html"
+                ><i class="fa fa-video-camera"></i> Channel</a
+              >
+            </li>
+            <li>
+              <a href="../contact-us.html"
+                ><i class="fa fa-user-circle"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="mobilemenu"></i>
+      </nav>
+
+      <div class="text-box" id="title-text">
+        <h1>US Go Congress Registration</h1>
+        <a href="../tournaments/usgc2023.html" class="hero-btn"
+          ><i class="fa fa-arrow-left"></i>&nbsp;Return to Info Page</a
+        >
+      </div>
+    </section>
+
+    <!-- Info and form -->
+    <section class="contact-us">
+      <div class="contact-col">
+        <h2 class="header-more-space">
+          Registration Form - Travelling with NYIG
+        </h2>
+        <p>
+          <i class="fa fa-info-circle"></i> Please fill out one form for each
+          traveller.
+        </p>
+        <form
+          method="post"
+          autocomplete="on"
+          name="usgc-form"
+          id="usgc-form"
+          class="contact-form"
+        >
+          <!-- General info section -->
+          <h4>Personal Information</h4>
+          <ul class="form-flex-outer">
+            <li>
+              <label for="First Name">First Name</label>
+              <input type="text" name="First Name" id="First Name" required />
+            </li>
+            <li>
+              <label for="Middle Initial">Middle Initial</label>
+              <input type="text" name="Middle Initial" id="Middle Initial" />
+            </li>
+            <li>
+              <label for="Last Name">Last Name</label>
+              <input type="text" name="Last Name" id="Last Name" required />
+            </li>
+
+            <li>
+              <label for="Country">Country</label>
+              <input type="text" name="Country" id="Country" required />
+            </li>
+            <li>
+              <label for="Address Line 1">Address Line 1</label>
+              <input
+                type="text"
+                name="Address Line 1"
+                id="Address Line 1"
+                required
+              />
+            </li>
+            <li>
+              <label for="Address Line 2">Address Line 2</label>
+              <input
+                type="text"
+                name="Address Line 2"
+                id="Address Line 2"
+                required
+              />
+            </li>
+            <li>
+              <label for="City">City</label>
+              <input type="text" name="City" id="City" required />
+            </li>
+            <li>
+              <label for="State/Province">State/Province</label>
+              <input
+                type="text"
+                name="State/Province"
+                id="State/Province"
+                required
+              />
+            </li>
+            <li>
+              <label for="Zip Code">Zip Code</label>
+              <input type="text" name="Zip Code" id="Zip Code" required />
+            </li>
+            <li>
+              <label for="Timezone">Timezone</label>
+              <input type="text" name="Timezone" id="Timezone" required />
+            </li>
+            <li>
+              <label for="Email Address">Email Address</label>
+              <input
+                type="email"
+                name="Email Address"
+                id="Email Address"
+                required
+              />
+            </li>
+            <li>
+              <label for="Date of Birth">Date of Birth</label>
+              <input
+                type="date"
+                name="Date of Birth"
+                id="Date of Birth"
+                required
+              />
+            </li>
+            <li>
+              <label for="How Many Congresses">How Many Congresses?</label>
+              <select
+                name="How Many Congresses"
+                id="How Many Congresses"
+                required
+              >
+                <option value="First Congress">First Congress</option>
+                <option value="2-10 Congresses">2-10 Congresses</option>
+                <option value="11-20 Congresses">11-20 Congresses</option>
+                <option value="20+ Congresses">20+ Congresses</option>
+              </select>
+            </li>
+            <li>
+              <label for="Home State">Home State</label>
+              <input type="text" name="Home State" id="Home State" required />
+            </li>
+            <li>
+              <label for="Home Country">Home Country</label>
+              <input
+                type="text"
+                name="Home Country"
+                id="Home Country"
+                required
+              />
+            </li>
+            <li>
+              <label for="T-Shirt">T-Shirt</label>
+              <select name="T-Shirt" id="T-Shirt" required>
+                <option value="None">None</option>
+                <option value="Youth-Small">Youth-Small</option>
+                <option value="Youth-Medium">Youth-Medium</option>
+                <option value="Youth-Large">Youth-Large</option>
+                <option value="Adult-Small">Adult-Small</option>
+                <option value="Adult-Medium">Adult-Medium</option>
+                <option value="Adult-Large">Adult-Large</option>
+                <option value="Adult-X-Large">Adult-X-Large</option>
+                <option value="Adult-XX-Large">Adult-XX-Large</option>
+                <option value="Adult-XXX-Large">Adult-XXX-Large</option>
+              </select>
+            </li>
+            <li>
+              <label for="Gender">Gender</label>
+              <select name="Gender" id="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-binary">Non-binary</option>
+                <option value="NoAnswer">NoAnswer</option>
+              </select>
+            </li>
+            <li>
+              <label for="Playing In The Open">Playing In The Open?</label>
+              <select
+                name="Playing In The Open"
+                id="Playing In The Open"
+                required
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </li>
+            <li>
+              <label for="AGA Rating Accuracy"
+                >Is your AGA rating accurate?</label
+              >
+              <textarea
+                name="AGA Rating Accuracy"
+                id="AGA Rating Accuracy"
+                rows="2"
+              >
+Use AGA Rating</textarea
+              >
+            </li>
+            <li>
+              <label for="Cell phone">Cell phone</label>
+              <input
+                type="tel"
+                placeholder="123-456-7890"
+                name="Cell phone"
+                id="Cell phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </li>
+            <li>
+              <label for="Receive Notifications">Receive Notifications</label>
+              <input
+                class="largerCheckbox"
+                type="checkbox"
+                name="Receive Notifications"
+                id="Receive Notifications"
+              />
+            </li>
+          </ul>
+          <ul class="header-more-space form-flex-outer">
+            <h4>Emergency Contact Information</h4>
+            <li>
+              <label for="Emergency Contact Full Name">Full Name</label>
+              <input
+                type="text"
+                name="Emergency Contact Full Name"
+                id="Emergency Contact Full Name"
+                required
+              />
+            </li>
+            <li>
+              <label for="Emergency Contact Relationship">Relationship</label>
+              <input
+                type="text"
+                name="Emergency Contact Relationship"
+                id="Emergency Contact Relationship"
+                required
+              />
+            </li>
+            <li>
+              <label for="Emergency Contact Phone Number">Phone Number</label>
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-456-7890"
+                name="Emergency Contact Phone Number"
+                id="Emergency Contact Phone Number"
+                required
+              />
+            </li>
+            <li>
+              <label for="Emergency Contact Email">Email</label>
+              <input
+                type="email"
+                name="Emergency Contact Email"
+                id="Emergency Contact Email"
+                required
+              />
+            </li>
+          </ul>
+
+          <ul class="form-flex-outer">
+            <li>
+              <label for="Registration Type">Registration Type</label>
+              <select name="Registration Type" id="Registration Type" required>
+                <option value="Travelling with NYIG $3000">
+                  Travelling with NYIG $3000
+                </option>
+              </select>
+            </li>
+          </ul>
+          <button
+            onclick=""
+            type="submit"
+            name="Submit"
+            class="hero-btn submit form"
+            id="submit-btn"
+          >
+            Submit Registration Form
+          </button>
+          <p>
+            (Please do not refresh the page until you receive the pop-up dialog)
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer BEGIN -->
+    <section class="footer" id="footer">
+      <hr />
+      <form method="post" autocomplete="on" name="subscribe" id="subscribe">
+        <h4>Subscribe to Go news & events</h4>
+        <input
+          type="text"
+          class="name"
+          name="Name"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          class="email"
+          name="Email"
+          placeholder="Enter your email"
+          required
+        />
+        <button onclick="" type="submit" name="Submit" class="hero-btn submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="logo-and-text">
+          <a href="../index.html">
+            <img src="../images/logo-nobg.png" alt="<NYIG Logo>" />
+            <span>NYIG</span>
+          </a>
+        </div>
+        <p class="footer-links">
+          <a href="../about.html">About</a>
+          <a href="../group-class.html">Group Class</a>
+          <a href="../private-lesson.html">Private Lesson</a>
+          <a href="../tournaments.html">Events</a>
+          <a href="../nyig_go.html">Channel</a>
+          <a href="../contact-us.html">Contact</a>
+        </p>
+        <p class="footer-company-name">New York Institute of Go Ⓒ 2022</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>424 W 49th St, 1A</span> New York, NY</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.646.287.9536</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:info@ny-go.org">info@ny-go.org</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Our mission promote and prolong the game of Go, the oldest board game
+          still played in its original form, in North America.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/mingnyig"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="http://youtube.com/nyig_go"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a
+            href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HNSEEJGX9W7VA&source=url"
+            ><i class="fa fa-paypal"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/nyig"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/nyig_go"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
+
+    <script src="../js/sub.js"></script>
+    <script src="../js/nav_toggle.js"></script>
+    <script src="../js/usgc_form.js"></script>
+  </body>
+</html>
