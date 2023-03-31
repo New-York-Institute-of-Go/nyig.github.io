@@ -1,0 +1,44 @@
+.row.btn#row {
+  margin-top: -10px;
+  /* padding-top: -10px; */
+}
+
+.sub-header {
+  height: 60vh;
+}
+
+.checkout-text {
+  font-size: 2rem !important;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  color: rgb(225, 193, 110);
+}
+
+.wechat-links {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+  .checkout-text {
+    margin-top: 1rem;
+    font-size: 1rem !important;
+    margin-bottom: 1rem;
+  }
+  .sub-header {
+    height: 40vh;
+  }
+  .hero-btn {
+    font-size: 10px !important;
+    font-weight: 500;
+    padding: 6px 10px;
+    margin-top: 0px;
+  }
+  .contact-button {
+    font-size: 10px;
+    flex-basis: 70%;
+    padding: 6px 10px;
+    margin-top: 0px;
+  }
+}
